@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    border-bottom: 5px solid #822a0b;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav p {
+    font-family: 'Oswald', sans-serif;
+    color: orangered;
+    font-size: 13px;
+    margin-right: 20px; /* Adjusted for better alignment */
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+}
+
+#main-im {
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    bottom: 130px;
+}
+
+#back {
+    width: 100%vw;
+    height: 100%vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit:contain;
+    position: absolute;
+    z-index: 1; /* Ensure the image is behind other elements */
+}
+
+.transparent-box {
+    width: 850px;
+    height: 55px;
+    padding: 20px;
+    background-color: rgba(214, 54, 0, 0.7);
+    color: white;
+    text-align: end;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 210px;
+    right: 255px;
+    border-radius: 4px;
+}
+
+#clock {
+    width: 20px;
+    filter: invert(1);
+    position: relative;
+    left: 280px;
+
+}
+
+.info-box {
+    width: 850px;
+    padding: 20px;
+    background-color: rgba(63, 63, 63, 0.7);
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 4px;
+    position: relative;
+    bottom: 16.4rem;
+    left: 12px;
+
+}
+#r{
+    color: orangered;
+}
+
+.info-box a {
+    color: orangered;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 16rem;
+
+}
+
+.content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content img {
+    width: 30px;
+    filter: invert(1);
+}
+
+.content h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f14f14;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    position: relative;
+    top: 100px;
+}
+.con1 p, .con2 p, .con3 p, .con4 p, .con5 p {
+    font-size: 15px;
+    color: #89AD19;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 12px;
+    
+}
+
+.par, .par-2, .par-3, .par-4 {
+    text-align: center;
+    color: #656565;
+    margin: 20px auto;
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    bottom: 185px;
+}
+#do{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 290px;
+}
+#ma{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 290px;
+
+}
+#mov,#tel,#gam,#mus,#app,#xx{
+    display: flex;
+    position: relative;
+    top: 4rem;
+    
+}
+#mov,#tel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 62px;
+}
+#m,#t,#g,#mu,#a,#an,#d,#o,#X{
+    display: flexbox;
+    position: relative;
+    top: 20px;
+}
+#t{
+    display: flexbox;
+    position: relative;
+    top: 27px;
+}
+.content h5{
+    position: relative;
+    bottom: 20rem;
+}
+#mov,#tel,#gam,#mus,#app,#xx,#ani,#doc,#oth{
+    top: 50px;
+}
+#app{
+    position: relative;
+    top: 2rem;
+}
+.con1,.con2,.con3,.con4,.con5,.con6,.con7,.con8,.con9{
+    display: flex;
+    position: relative;
+    bottom: 8%;
+}
+.con5{
+    position: relative;
+    top: 20px;
+}
+#disc{
+    text-align: center;
+    color: gold;
+}
+#disc:hover{
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    #main-im {
+        width: 100%;
+        height: 50%;
+    }
+
+    .transparent-box {
+        display: none;
+    }
+    .info-box{
+        width: 90%;
+
+    }
+    .content {
+        display: flex;
+    }
+
+    .content div {
+        width: 60px;
+        height: 60px;
+    }
+    #m,#g,#mu,#a,#an,#d,#o,#X{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        bottom: 30px;
+        margin-bottom: 0.7rem;
+    }
+    #mov,#tel,#gam,#mus,#app{
+        margin: bottom 4rem;
+    }
+    .con6, .con7, .con8{
+        position: relative;
+        top: 20px;
+        
+    }
+    #t{
+        display: flexbox;
+        position: relative;
+        top: 15px;
+    }
+    #c1,#c2{
+        display: none;
+    }
+    .con5{
+        position: relative;
+        top: 18px;
+    }
+    #mov,#tel,#gam,#mus,#app,#ani,#doc,#xx{
+        position: relative;
+        top: 16px;
+    }
+    #tel{
+        margin-top: 22px;
+    }
+    #oth{
+        display: flex;
+        position: relative;
+        bottom: 3rem;
+    }
+    #app{
+        margin-left: 11px;
+    }
+    .con9{
+        position: relative;
+        bottom: 30px;
+    }
+    .con5{
+        position: relative;
+        bottom: 20px;
+    }
+
+}
+    
+@media  (min-width: 130px) and (max-width:450px){    
+    #main-im {
+        width: 80%;
+        height: 50vh;
+    }
+
+    .transparent-box {
+        display: none;
+    }
+    .info-box{
+        width: 90%;
+
+    }
+    .content {
+        display: flex;
+    }
+
+    .content div {
+        width: 60px;
+        height: 60px;
+    }
+    #m,#g,#mu,#a,#an,#d,#o,#X{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        bottom: 30px;
+        margin-bottom: 0.7rem;
+    }
+    #oth{
+        display: flex;
+        top: 20px;
+        left: 6px;
+    }
+    .con6, .con7, .con8{
+        position: relative;
+        top: 20px;
+        
+    }
+    #t{
+        display: flexbox;
+        position: relative;
+        top: 15px;
+    }
+    #c1,#c2{
+        display: none;
+    }
+    #ani,#doc{
+        position: relative;
+        bottom: -20px;
+        right: 10px;
+    }
+    }
+    #mov,#tel,#gam,#mus,#app,#xx{
+        position: relative;
+        top: 16px;
+    }
+    #tel{
+        margin-top: 22px;
+    }
+
+    #app{
+        margin-left: 11px;
+    }
+    .con9{
+        position: relative;
+        top: 18px;
+    }
+    .con5{
+        margin-top: -18px;
+    }
+
+}
